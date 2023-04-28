@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html {
+  background-color: #40434f;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('https://th.bing.com/th/id/R.3defdedd1f2f9ea08f09134645413eca?rik=f63d0KVxevAjUw&pid=ImgRaw&r=0');
+  background-size: cover;
+}
+
+.chat-wrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  padding: 2rem;
+  backdrop-filter: blur(2px);
+}
+
+.chat-wrapper h1 {
+  color: white;
+}  
+
+.chat-wrapper button {
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(0px);
+  border-radius: 1px;
+  width: 7rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.chat-wrapper button:hover {
+  backdrop-filter: blur(2px);
+  transition: all 0.5s;
+}
+
+.chat-wrapper input {
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 2px;
+  padding: 1px;
+  width: 20rem;
+  height: 1rem;
+  font-weight: bold;
+}
+
+.chats {
+  height: 20rem;
+  width: 100%;
+  background-color: rgba(255,255,255, 0.1);
+  margin-bottom: 1rem;
+  overflow: scroll;
+}
+
+.chat-bubble {
+  display: block;
+  color: white;
+  background-color: rgba(100, 100, 255, 0.6);
+  padding: 0.4rem;
+  border-radius: 4px;
+  margin: 1rem;
+  animation: popUp 3s ease 1 forwards;
+}
+
+.chat-bubble p {
+  margin: none;
+}
+
+.assistant {
+  background-color: rgba(100, 150, 255, 0.6) !important;
+}
+
+.user {
+  background-color: rgba(100, 255, 100, 0.6) !important;
+}
+
+.err {
+  background-color: rgba(255, 0, 0, 0.6) !important;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0.2;
+    max-height: 0;
+    overflow: hidden;
+  }
+  100% {
+    opacity: 1;
+    max-height: 250px; /* Set the maximum height you expect */
+    overflow: scroll;
+  }
+}
+
+.my-element::-webkit-scrollbar {
+  width: 6px;
+}
+
+.my-element::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.my-element::-webkit-scrollbar-track {
+  background-color: transparent;
+}
